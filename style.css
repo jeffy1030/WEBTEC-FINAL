@@ -1,0 +1,164 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+body{
+    width: 100%;
+}
+
+#header {
+    position: fixed; /* Locks the header at the top of the viewport */
+    top: 0; /* Ensures it stays at the top */
+    width: 100%; /* Makes it span the full width of the viewport */
+    background-color: #282F52; /* Background color for visibility */
+    z-index: 500; /* Ensures it stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds shadow for better separation */
+    padding: 10px 80px; /* Adds some spacing inside the header */
+    display: flex; /* Aligns content in a row */
+    align-items: center; /* Vertically centers the items */
+  }
+  
+  /* Logo Styling */
+  #header .logo {
+    max-height: 70px; /* Restricts logo height for consistency */
+    object-fit: contain; /* Ensures the logo fits nicely within the container */
+    padding-right: 10rem;
+  }
+  
+  /* Navbar Styling */
+  #navbar {
+    list-style: none; /* Removes default list styling */
+    display: flex; /* Makes the navbar items align horizontally */
+    gap: 50px; /* Adds spacing between navbar items */
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navbar li {
+    display: inline-block; /* Ensures list items stay inline */
+    margin-right: 50px;
+  }
+  
+  #navbar a {
+    text-decoration: none; /* Removes underline */
+    color: white;/* Text color */
+    font-weight: bold; /* Emphasizes links */
+    transition: color 0.3s; /* Smooth hover effect */
+  }
+  
+  #navbar a:hover {
+    color: yellow; /* Changes color on hover */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    #header {
+      flex-direction: column; /* Stacks logo and navbar vertically */
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  
+    #navbar {
+      flex-direction: column; /* Stacks navbar items vertically */
+      gap: 10px; /* Reduces spacing for smaller screens */
+    }
+  
+    #navbar a {
+      text-align: center; /* Centers links */
+    }
+  }
+
+.btn.btn-success{
+    border-radius: 25px;
+    width: 12rem;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.p1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.p2{
+    font-style: italic;
+    font-size: 25px;
+}
+
+.book-intro{
+    margin-top: 100px;
+}
+
+.book-statistics{
+    padding: 30px;
+    background-color: #323b69
+}
+
+.p3{
+    font-size: 18px;
+    color: white;
+}
+
+.inner-statistics{
+    color: white;
+}
+
+.note-margin{
+    background-color: #3e4982;
+    padding: 50px;
+    color: white;
+}
+
+.note{
+    padding-left: 18rem;
+    padding-right: 18rem;
+}
+
+.literacy-margin{
+    padding: 50px;
+}
+
+.literacy{
+    padding-left: 18rem;
+    padding-right: 18rem;
+}
+
+.desc{
+    font-size: 18px;
+}
+
+.footer {
+    bottom: 0; /* Sticks to the bottom of the viewport */
+    width: 100%; /* Ensures the footer spans the entire width */
+    background-color: #f4f4f4; /* Background color for visibility */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Adds a shadow for separation */
+  }
+  
+  .footer-contents {
+    padding-top: 2rem; /* Adds inner spacing */
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+  
+  .row {
+    display: flex; /* Makes columns align horizontally */
+    justify-content: space-between; /* Distributes columns evenly */
+    flex-wrap: wrap; /* Adjusts for smaller screens */
+  }
+  
+  .col {
+    flex: 1; /* Distributes available space evenly */
+    margin: 0 10px; /* Adds spacing between columns */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .row {
+      flex-direction: column; /* Stacks columns vertically on smaller screens */
+    }
+  
+    .col {
+      margin-bottom: 15px; /* Adds spacing between stacked columns */
+    }
+  }
+
+
+

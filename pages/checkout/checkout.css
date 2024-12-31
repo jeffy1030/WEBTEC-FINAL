@@ -1,0 +1,84 @@
+#header {
+  position: fixed; /* Locks the header at the top of the viewport */
+  top: 0; /* Ensures it stays at the top */
+  width: 100%; /* Makes it span the full width of the viewport */
+  background-color: #282F52; /* Background color for visibility */
+  z-index: 500; /* Ensures it stays above other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds shadow for better separation */
+  padding: 10px 80px; /* Adds some spacing inside the header */
+  display: flex; /* Aligns content in a row */
+  align-items: center; /* Vertically centers the items */
+}
+
+/* Logo Styling */
+#header .logo {
+  max-height: 70px; /* Restricts logo height for consistency */
+  object-fit: contain; /* Ensures the logo fits nicely within the container */
+  padding-right: 10rem;
+}
+
+/* Navbar Styling */
+#navbar {
+  list-style: none; /* Removes default list styling */
+  display: flex; /* Makes the navbar items align horizontally */
+  gap: 50px; /* Adds spacing between navbar items */
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  display: inline-block; /* Ensures list items stay inline */
+  margin-right: 50px;
+}
+
+#navbar a {
+  text-decoration: none; /* Removes underline */
+  color: white;/* Text color */
+  font-weight: bold; /* Emphasizes links */
+  transition: color 0.3s; /* Smooth hover effect */
+}
+
+#navbar a:hover {
+  color: yellow; /* Changes color on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  #header {
+    flex-direction: column; /* Stacks logo and navbar vertically */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  #navbar {
+    flex-direction: column; /* Stacks navbar items vertically */
+    gap: 10px; /* Reduces spacing for smaller screens */
+  }
+
+  #navbar a {
+    text-align: center; /* Centers links */
+  }
+}
+
+/*Checkout design*/
+
+.entire-checkout-form{
+  padding-top: 10rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.delivery-address-form{
+  border: 2px solid lightblue;
+  padding: 3rem;
+  background-color: #e7e3e3;
+}
+
+.title.row.mb-3{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.title-header{
+  text-align: center;
+}
+
